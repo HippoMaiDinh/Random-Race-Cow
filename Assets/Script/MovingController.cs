@@ -3,7 +3,6 @@
     public class MovingController : MonoBehaviour
     {
         public float speed = 10f;
-        private float horizontalInput;
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
@@ -14,5 +13,7 @@
         void Update()
         {
             transform.Translate(Vector3.right * Time.deltaTime * speed);
+            Debug.Log("đang chạy");
         }
+        
     }
